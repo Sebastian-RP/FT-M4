@@ -21,7 +21,7 @@ mantendrá un registro de todos aquellos usuarios que hayan creado alguna págin
   var db = new Sequelize('postgres://usuario:password@localhost:5432/henryblog', {
     logging: false,
   });
-  ```
+  ```b  
   Es necesario cambiar donde dice `usuario` por el usuario con el cual crearon la base de datos y
   donde dice `password` con la contraseña de dicho usuario.
 
@@ -237,7 +237,7 @@ router.get('/', function(req, res){
 
 })
 ```
-
+ 
 #### GET /pages/:urlTitle
 
 Modificar el archivo `pages.js` de la carpeta `routes` y utilizar el método `findOne` de Sequelize
